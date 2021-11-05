@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Formulario de registro - Mi web</title>
+<meta name="description" content="HTML5">
+<meta name="author" content="Álvaro Castillo">
+</head>
+<body>
+	<h1>Formulario de registro</h1>
+	<form method="get" action="./pagina2.html">
+		<fieldset>
+			<legend>datos de usuario</legend>
+			
+		<p>Nombre: <input type="text" name="nombre" id="nombre" maxlength="50"></p>
+		<p>Apellidos: <input type="text" name="apellidos" id="apellidos" maxlength="50"></p>
+		<p>Sexo: <input type="radio" name="sexo" id="genero">hombre<input type="radio" name="sexo">mujer</p>
+		<p>Correo: <input type="text" name="mail" id="correo"></p>
+		<p>Rol: <select name="rol" id="ocupacion">
+			<option hidden label=" "></option>
+			<option value="estudiante">Estudiante</option>
+			<option value="profesor">Profesor</option>
+			<option value="ayudante">Ayudante</option>
+			<option value="administrador">Administrador</option>
+			</select></p>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Acciones</legend>
+			<P><input type="checkbox" name="ofertas" id="ofertas" checked>Deseo recibir información sobre novedades y ofertas</P>
+			<P><input type="checkbox" name="proteccion" id="condiciones">
+			Declaro haber leido y aceptado las condiciones generales del programa y la normativa sobre protección de datos</P>
+			<p><input type="submit" name="enviar" value="Enviar"> <input type="reset" name="borrar" value="Eliminar"></p>
+		</fieldset>
+	</form>
+</body>
+</html>
